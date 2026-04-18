@@ -4,7 +4,7 @@ Guidance for Claude Code sessions operating in this repository.
 
 ## What Fleet is
 
-Fleet is the **public-facing companion** to private research on edge-sensor compression conducted by Peripheral Technologies LLC. It is read by strangers — researchers, engineers, potential collaborators, hackathon judges, and curious visitors.
+Fleet is the **public-facing companion** to private research on edge-sensor compression conducted by Peripheral Technologies LLC. It is read by researchers, engineers, collaborators, and anyone curious about how language models might one day talk to physical sensors at the codec layer.
 
 This repo is a **curated shelf**, not a working notebook. Everything that lands here is deliberate.
 
@@ -32,7 +32,7 @@ This repo is a **curated shelf**, not a working notebook. Everything that lands 
 
 ## Style and tone
 
-This repo is read by strangers. Write for them.
+Write for the reader, not for the author.
 
 - **Plain language** — short sentences, common words, no internal jargon
 - **Lead with what the reader wants** — what does this do, when would I use it, how do I run it
@@ -55,7 +55,7 @@ Before writing or committing, check:
 
 1. **Source check** — where does this content come from? If the answer involves any private repo, stop and ask the user.
 2. **Posture check** — does this reveal architecture (OK) or performance/tuning/moat (not OK)?
-3. **Audience check** — will a stranger reading this in six months understand what it is and why it exists?
+3. **Audience check** — will a reader coming in fresh understand what this is and why it exists?
 4. **Scope check** — does this fit the "curated shelf" purpose, or is it notebook material that should stay private?
 
 If any check is unclear, ask before proceeding.
