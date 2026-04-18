@@ -21,6 +21,16 @@ This reference sticks to the core: dense rotation, scalar quantization, log-gain
 
 ## Attribution
 
-- The rotation-first-then-quantize idea has a long history in signal processing. Recent attention comes from work on training-free compression for vector search and for LLM weight compression.
-- The specific "TurboQuant" framing appears in recent work from Google; see the TurboQuant paper at ICLR 2026 for the published version.
-- This implementation is original — it is not a line-by-line port of any specific paper's code.
+**TurboQuant** is introduced by:
+
+> Amir Zandieh, Majid Daliri, Majid Hadian, Vahab Mirrokni.
+> *TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate.*
+> ICLR 2026. arXiv: [2504.19874](https://arxiv.org/abs/2504.19874).
+
+Zandieh, Hadian, and Mirrokni are at Google Research / Google DeepMind; Daliri is at NYU. The paper establishes near-optimal distortion rates for mean-squared-error and inner-product preservation using randomized rotations and optimal per-coordinate scalar quantizers, with a careful analysis based on the beta distribution that emerges after rotation.
+
+Google Research's blog post ([research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/)) gives a more accessible summary.
+
+The broader rotation-first-then-quantize family has a long history in signal processing — see the classical references in Gersho & Gray, *Vector Quantization and Signal Compression* (Kluwer, 1992). TurboQuant's contribution is the near-optimality analysis and the specific bit-allocation scheme, not the basic idea of rotating before quantizing.
+
+**About this reference implementation.** This code is a clean-room, deliberately simplified version written to illustrate the core structure (dense random rotation + uniform scalar quantization + log-gain scale). It does not implement the paper's optimal per-coordinate quantizers, structured rotations, or other refinements. For the full method, read the paper.

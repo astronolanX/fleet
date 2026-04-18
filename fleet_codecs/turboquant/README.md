@@ -39,6 +39,14 @@ The rotation is what makes uniform scalar quantization work. After a random orth
 - This reference uses dense matrix multiplication for the rotation. Production implementations often use structured rotations (Hadamard, SRHT) for speed on large dimensions.
 - The scale encoding uses log-gain quantization over the range `2^-8` to `2^8`. Inputs outside that range will clip.
 
-## Prior art
+## Prior art and attribution
 
-The technique is presented in recent work from Google and others on training-free compression for inner-product-preserving vector quantization. This implementation is deliberately simplified for clarity — see `notes.md` for references and a discussion of the variants found in the literature.
+TurboQuant is introduced in:
+
+> Amir Zandieh, Majid Daliri, Majid Hadian, Vahab Mirrokni.
+> **TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate.**
+> ICLR 2026. arXiv: [2504.19874](https://arxiv.org/abs/2504.19874).
+
+Zandieh, Hadian, and Mirrokni are at Google Research / Google DeepMind; Daliri is at NYU. Google Research also published a blog post on the method: [TurboQuant — Redefining AI efficiency with extreme compression](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/).
+
+This implementation is a deliberately simplified, clean-room reference written to illustrate the core idea. It is not a line-by-line port of the authors' code and does not reproduce the full set of optimizations described in the paper (optimal per-coordinate scalar quantizers, the beta-distribution analysis, etc.). For those, read the paper.
