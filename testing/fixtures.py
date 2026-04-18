@@ -1,6 +1,6 @@
 """Pytest fixtures for codec testing.
 
-Drop `from fleet_testing.fixtures import *` into a `conftest.py` to pick
+Drop `from testing.fixtures import *` into a `conftest.py` to pick
 these up. They are not registered globally — opt-in per test module.
 """
 

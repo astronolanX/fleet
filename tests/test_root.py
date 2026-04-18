@@ -5,8 +5,8 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from fleet_codecs.root import Root
-from fleet_testing import Codec, assert_roundtrip_shape, run_roundtrip_eval
+from codex.root import Root
+from testing import Codec, assert_roundtrip_shape, run_roundtrip_eval
 
 
 def test_implements_codec_protocol() -> None:

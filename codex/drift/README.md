@@ -21,7 +21,7 @@ Less good fit:
 ## How to run
 
 ```bash
-python -m fleet_codecs.drift.demo
+python -m codex.drift.demo
 ```
 
 The demo runs Drift at 1, 2, 3, and 4 bits per tangent coordinate on Gaussian 32-dimensional vectors. You should see cosine similarity climbing as bits increase — the base is already doing most of the coarse work, and the tangent refines within the local patch.

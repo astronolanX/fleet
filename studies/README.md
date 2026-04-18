@@ -5,7 +5,7 @@ A study is a short, reproducible investigation into how a codec behaves — when
 Studies in Fleet have the same shape every time:
 
 ```
-fleet_studies/<name>/
+studies/<name>/
 ├── README.md     # the question, the method, the result, the conclusion
 ├── run.py        # a single runnable script that reproduces the finding
 └── notes.md      # optional deeper notes on the math, alternatives, caveats
@@ -14,7 +14,7 @@ fleet_studies/<name>/
 A reader should be able to clone the repo, install it, and run:
 
 ```bash
-python -m fleet_studies.<name>.run
+python -m studies.<name>.run
 ```
 
 ...in under sixty seconds, and see the numbers or plot that back up the study's conclusion.
@@ -42,12 +42,12 @@ The first study will be added when a finding is picked, piloted, and confirmed t
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) in the repo root. The short version:
 
-1. Copy `fleet_studies/_template/` to `fleet_studies/<your-study-name>/`
+1. Copy `studies/_template/` to `studies/<your-study-name>/`
 2. Fill in `run.py`, `README.md`, and (optionally) `notes.md`
-3. Make sure `python -m fleet_studies.<name>.run` completes in under sixty seconds with deterministic output
+3. Make sure `python -m studies.<name>.run` completes in under sixty seconds with deterministic output
 4. Add your study to the list above and open a PR
 
 ## Related
 
-- [`../fleet_codecs/`](../fleet_codecs/) — the codecs these studies investigate
-- [`../fleet_testing/`](../fleet_testing/) — shared harness primitives available to studies
+- [`../codecs/`](../codecs/) — the codecs these studies investigate
+- [`../testing/`](../testing/) — shared harness primitives available to studies

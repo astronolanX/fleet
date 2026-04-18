@@ -21,7 +21,7 @@ Less good fit:
 ## How to run
 
 ```bash
-python -m fleet_codecs.compass.demo
+python -m codex.compass.demo
 ```
 
 The demo runs Compass at 1, 2, 3, and 4 bits per coordinate on Gaussian 32-dimensional vectors and prints the resulting mean cosine. More bits give finer magnitudes and higher fidelity; the heading contribution stays the same.

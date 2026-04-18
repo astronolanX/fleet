@@ -16,7 +16,7 @@ Less good fit:
 ## How to run
 
 ```bash
-python -m fleet_codecs.turboquant.demo
+python -m codex.turboquant.demo
 ```
 
 The demo runs TurboQuant at 1, 2, 3, and 4 bits per coordinate on a random 64-dimensional vector and prints the cosine similarity between the original and the decoded vector. You should see cosine climbing as bits_per_coord increases.

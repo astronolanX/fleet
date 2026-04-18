@@ -5,8 +5,8 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from fleet_codecs.turboquant import TurboQuant
-from fleet_testing import (
+from codex.turboquant import TurboQuant
+from testing import (
     Codec,
     assert_cosine_above,
     assert_roundtrip_shape,

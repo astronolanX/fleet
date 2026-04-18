@@ -2,7 +2,7 @@
 
 Runs a codec across a batch of vectors and returns summary stats. The
 harness is deliberately light — it reports, it does not judge. If you
-want a pass/fail gate, use an assertion from fleet_testing.assertions
+want a pass/fail gate, use an assertion from testing.assertions
 against the returned numbers.
 """
 

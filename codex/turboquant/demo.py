@@ -1,7 +1,7 @@
 """Demonstration of TurboQuant on a random vector.
 
 Run with:
-    python -m fleet_codecs.turboquant.demo
+    python -m codex.turboquant.demo
 """
 
 from __future__ import annotations

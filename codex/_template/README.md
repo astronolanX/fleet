@@ -13,7 +13,7 @@ The story behind why this codec exists. What did you see or notice that made you
 ## How to run
 
 ```bash
-python -m fleet_codecs.<name>.demo
+python -m codex.<name>.demo
 ```
 
 Describe what the demo prints and what a healthy run looks like.

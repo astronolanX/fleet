@@ -1,4 +1,4 @@
-# fleet_testing
+# Testing harness
 
 A small testing harness for codecs in the Fleet gallery.
 
@@ -18,8 +18,8 @@ The goal is modest: every codec here should be testable the same way, with the s
 
 ```python
 import numpy as np
-from fleet_codecs.turboquant import TurboQuant
-from fleet_testing import run_roundtrip_eval, assert_cosine_above
+from codex.turboquant import TurboQuant
+from testing import run_roundtrip_eval, assert_cosine_above
 
 codec = TurboQuant(dim=64, bits_per_coord=2)
 result = run_roundtrip_eval(codec, n=100)
@@ -36,7 +36,7 @@ assert_cosine_above(
 In a test file's `conftest.py`:
 
 ```python
-from fleet_testing.fixtures import *  # noqa: F401,F403
+from testing.fixtures import *  # noqa: F401,F403
 ```
 
 Then in tests:
@@ -63,6 +63,6 @@ If Fleet grows and needs any of that, it gets added as its own module — not by
 
 ## Related
 
-- [`../fleet_codecs/`](../fleet_codecs/) — the codec gallery this harness tests
-- [`../fleet_studies/`](../fleet_studies/) — studies that use these primitives
+- [`../codecs/`](../codecs/) — the codec gallery this harness tests
+- [`../studies/`](../studies/) — studies that use these primitives
 - [`../tests/`](../tests/) — pytest suite exercising each codec against the harness

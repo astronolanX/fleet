@@ -22,7 +22,7 @@ Less good fit:
 ## How to run
 
 ```bash
-python -m fleet_codecs.root.demo
+python -m codex.root.demo
 ```
 
 The demo runs Root on 100 random unit vectors in R^8 and prints the cosine similarity between each original and its decoded reconstruction. You should see a mean cosine around 0.84 — 240 points do a decent job of covering the 7-sphere, but "decent" is not "perfect," and the 15th percentile is a useful reminder that one byte of angular resolution in 8D has real limits.

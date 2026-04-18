@@ -15,7 +15,7 @@ How do you answer it? Which codec, what inputs, what metric. Three to five sente
 What the numbers or plot actually show. Include the result inline — a table, a small figure, or a few bullet points. Cite the exact command a reader would run to reproduce.
 
 ```bash
-python -m fleet_studies.<name>.run
+python -m studies.<name>.run
 ```
 
 ## The conclusion

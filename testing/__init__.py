@@ -7,7 +7,7 @@ tested the same way.
 
 Public surface:
 
-    from fleet_testing import (
+    from testing import (
         Codec,                       # Protocol every Fleet codec implements
         gaussian_vectors,            # reproducible Gaussian generator
         unit_vectors,                # reproducible unit-norm generator
@@ -17,7 +17,7 @@ Public surface:
         RoundtripResult,
     )
 
-See fleet_testing/README.md for details.
+See testing/README.md for details.
 """
 
 from .assertions import assert_cosine_above, assert_roundtrip_shape

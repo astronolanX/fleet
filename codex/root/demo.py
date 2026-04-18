@@ -1,7 +1,7 @@
 """Demonstration of Root on random unit vectors.
 
 Run with:
-    python -m fleet_codecs.root.demo
+    python -m codex.root.demo
 """
 
 from __future__ import annotations

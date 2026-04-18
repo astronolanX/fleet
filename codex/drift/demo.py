@@ -1,14 +1,14 @@
-"""Demonstration of Compass.
+"""Demonstration of Drift.
 
 Run with:
-    python -m fleet_codecs.compass.demo
+    python -m codex.drift.demo
 """
 
 from __future__ import annotations
 
 import numpy as np
 
-from .codec import Compass
+from .codec import Drift
 
 
 def main() -> None:
@@ -16,7 +16,7 @@ def main() -> None:
     dim = 32
 
     for bits in (1, 2, 3, 4):
-        codec = Compass(dim=dim, bits_per_coord=bits)
+        codec = Drift(dim=dim, bits_per_coord=bits)
         cosines = []
         for _ in range(100):
             x = rng.standard_normal(dim)
@@ -31,6 +31,7 @@ def main() -> None:
         print(
             f"bits_per_coord={bits}  "
             f"bytes={code_len}  "
+            f"bases={codec.num_bases}  "
             f"mean_cos={mean_cos:.4f}"
         )
 

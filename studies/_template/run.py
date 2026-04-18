@@ -1,7 +1,7 @@
 """Runnable script for <StudyName>.
 
 Run with:
-    python -m fleet_studies.<name>.run
+    python -m studies.<name>.run
 
 Should complete in under sixty seconds and print or plot the result
 that backs up the study's conclusion. Deterministic — seed anything

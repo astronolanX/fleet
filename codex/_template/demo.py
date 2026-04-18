@@ -1,7 +1,7 @@
 """Runnable demonstration of <CodecName>.
 
 Run with:
-    python -m fleet_codecs.<name>.demo
+    python -m codex.<name>.demo
 """
 
 from __future__ import annotations

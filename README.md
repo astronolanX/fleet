@@ -34,19 +34,19 @@ Small, careful public artifacts help the field more than polished marketing. If 
 
 ```
 fleet/
-├── fleet_codecs/         # the codec gallery, one folder per codec
+├── codex/             # the codec gallery, one folder per codec
 │   ├── turboquant/
 │   ├── root/
 │   ├── compass/
 │   ├── drift/
-│   └── _template/        # copy this when adding a new codec
-├── fleet_studies/        # short, reproducible investigations
-│   └── _template/        # copy this when adding a new study
-├── fleet_testing/        # reusable testing harness (protocol, generators,
-│                         # assertions, roundtrip eval, pytest fixtures)
-├── tests/                # tests for each codec, written against the harness
-├── CLAUDE.md             # guidance for Claude Code sessions in this repo
-├── CONTRIBUTING.md       # how to add a codec, study, or propose a change
+│   └── _template/     # copy this when adding a new codec
+├── studies/           # short, reproducible investigations
+│   └── _template/     # copy this when adding a new study
+├── testing/           # reusable testing harness (protocol, generators,
+│                      # assertions, roundtrip eval, pytest fixtures)
+├── tests/             # tests for each codec, written against the harness
+├── CLAUDE.md          # guidance for Claude Code sessions in this repo
+├── CONTRIBUTING.md    # how to add a codec, study, or propose a change
 └── pyproject.toml
 ```
 
@@ -56,7 +56,7 @@ Each directory has its own README that explains what lives there and how to add 
 
 ```bash
 pip install -e .
-python -m fleet_codecs.turboquant.demo
+python -m codex.turboquant.demo
 pytest
 ```
 
@@ -64,14 +64,14 @@ pytest
 
 | Codec | One-liner |
 |---|---|
-| [TurboQuant](fleet_codecs/turboquant/) | Randomized-rotation scalar quantization that preserves inner products |
-| [Root](fleet_codecs/root/) | Angular quantization against the 240 minimal vectors of E8 |
-| [Compass](fleet_codecs/compass/) | Sign-pattern heading + magnitude payload, direction and magnitude as separate code fields |
-| [Drift](fleet_codecs/drift/) | Base + tangent-space quantization — pick the nearest prototype, refine locally |
+| [TurboQuant](codex/turboquant/) | Randomized-rotation scalar quantization that preserves inner products |
+| [Root](codex/root/) | Angular quantization against the 240 minimal vectors of E8 |
+| [Compass](codex/compass/) | Sign-pattern heading + magnitude payload, direction and magnitude as separate code fields |
+| [Drift](codex/drift/) | Base + tangent-space quantization — pick the nearest prototype, refine locally |
 
 ## Studies
 
-Short investigations into how codecs behave — when they work, when they break, what they look like at the edges. See [fleet_studies/](fleet_studies/) for the current list and the study template.
+Short investigations into how codecs behave — when they work, when they break, what they look like at the edges. See [studies/](studies/) for the current list and the study template.
 
 ## Adding a codec or a study
 
