@@ -20,4 +20,4 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["fleet_codecs*", "fleet_testing*"]
+include = ["fleet_codecs*", "fleet_testing*", "fleet_studies*"]

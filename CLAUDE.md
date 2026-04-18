@@ -10,17 +10,17 @@ This repo is a **curated shelf**, not a working notebook. Everything that lands 
 
 ## Hard rules — never violate
 
-1. **Never import, reference, or paraphrase content from private repos.** This includes `periphera`, `peripheral`, `peripheral-protocol`, or any other private work. Treat them as if they don't exist when operating here.
+1. **Never import, reference, or paraphrase content from private repos.** Treat upstream private research as if it does not exist when operating here. If in doubt about whether a piece of content originates from private work, ask.
 
-2. **No production codecs.** BTQ-SafeGray, BTQ-Safe, Quip, DCT-BlockTQ, E8 Shell, Tangent-Space Shell, Monodromy, ChromaDual, GyroEcho, and any unnamed-but-novel variant in private work stay private. Fleet may host **public prior-art codecs** (TurboQuant, USQ, scalar quantization) or **deliberately simplified demonstrations**.
+2. **No production codecs.** Production codecs from upstream private research stay private. Fleet may host **public prior-art codecs** or **deliberately simplified demonstrations** that illustrate an idea.
 
-3. **No benchmark numbers from private research.** Do not publish SF, CRF, BER, Kendall tau, or comparative performance data from private experiments. If Fleet needs benchmark numbers, they must come from runs performed in this repo on public datasets with publicly-described methodology.
+3. **No benchmark numbers from private research.** Do not publish comparative performance data that originated in private experiments. If Fleet needs benchmark numbers, they must come from runs performed in this repo on public datasets with publicly-described methodology.
 
-4. **No firmware, no C ports, no embedded-specific IP.** The libgist C port and its patterns stay private. Fleet may include portable reference implementations in Python or standard C, but nothing that reveals the embedded tuning.
+4. **No firmware, no C ports, no embedded-specific IP.** Embedded ports and their tuning stay private. Fleet may include portable reference implementations in Python or standard C, but nothing that reveals the embedded work.
 
-5. **No evidence trails or internal verdicts.** The `evidence/`, `experiments/`, `spec/`, and `conformance/` patterns from private repos stay private. Fleet's testing/eval posture is its own — light, clear, and public-appropriate.
+5. **No evidence trails or internal verdicts.** Experimental infrastructure, evidence stores, internal specs, and conformance runners from private work stay private. Fleet's testing posture is its own — light, clear, and public-appropriate.
 
-6. **If in doubt, don't publish.** When unsure whether something belongs here, the default is no. Ask the user before publishing any content that references private work, even obliquely.
+6. **If in doubt, don't publish.** When unsure whether something belongs here, the default is no. Ask before publishing any content that references private work, even obliquely.
 
 ## What belongs here
 

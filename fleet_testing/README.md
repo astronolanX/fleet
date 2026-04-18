@@ -60,3 +60,9 @@ def test_my_codec(rng, small_gaussian_batch):
 - No cross-codec matched-bitrate comparison harness
 
 If Fleet grows and needs any of that, it gets added as its own module — not by widening this one.
+
+## Related
+
+- [`../fleet_codecs/`](../fleet_codecs/) — the codec gallery this harness tests
+- [`../fleet_studies/`](../fleet_studies/) — studies that use these primitives
+- [`../tests/`](../tests/) — pytest suite exercising each codec against the harness

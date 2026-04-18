@@ -2,15 +2,16 @@
 
 A curated showcase of codecs and protocol patterns from [Peripheral Technologies LLC](https://github.com/astronolanX).
 
-Fleet is the public-facing companion to private research on edge-sensor compression — specifically the family of lattice-quantized and rotation-based codecs that compress sensor data into geometric vectors small enough to stream from a microcontroller to a language model.
+Fleet is the public-facing companion to private research on edge-sensor compression — compressing sensor data into small geometric representations that travel efficiently from a microcontroller to a language model.
 
 ## What lives here
 
 Fleet publishes:
 
 - **Reference codec implementations** that are either public prior art (e.g., TurboQuant) or simplified demonstrations of a technique.
+- **Studies** — short, reproducible investigations into how a codec behaves.
 - **Protocol sketches** — wire formats, MCP bridges, and closed-loop patterns for LLM-to-sensor communication.
-- **Benchmarks and harnesses** where the harness itself is the contribution, not the numbers.
+- **Harnesses** where the harness itself is the contribution, not the numbers.
 - **Notes and writeups** — short reads on ideas worth sharing.
 
 ## What does not live here
@@ -39,13 +40,17 @@ fleet/
 │   ├── compass/
 │   ├── drift/
 │   └── _template/        # copy this when adding a new codec
+├── fleet_studies/        # short, reproducible investigations
+│   └── _template/        # copy this when adding a new study
 ├── fleet_testing/        # reusable testing harness (protocol, generators,
 │                         # assertions, roundtrip eval, pytest fixtures)
 ├── tests/                # tests for each codec, written against the harness
 ├── CLAUDE.md             # guidance for Claude Code sessions in this repo
-├── CONTRIBUTING.md       # how to add a codec or propose a change
+├── CONTRIBUTING.md       # how to add a codec, study, or propose a change
 └── pyproject.toml
 ```
+
+Each directory has its own README that explains what lives there and how to add more.
 
 ## Get started
 
@@ -64,7 +69,11 @@ pytest
 | [Compass](fleet_codecs/compass/) | Sign-pattern heading + magnitude payload, direction and magnitude as separate code fields |
 | [Drift](fleet_codecs/drift/) | Base + tangent-space quantization — pick the nearest prototype, refine locally |
 
-## Adding a codec
+## Studies
+
+Short investigations into how codecs behave — when they work, when they break, what they look like at the edges. See [fleet_studies/](fleet_studies/) for the current list and the study template.
+
+## Adding a codec or a study
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 

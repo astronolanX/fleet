@@ -29,3 +29,9 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) in the repo root. The short version:
 2. Fill in the four files
 3. Make sure `python -m fleet_codecs.<name>.demo` runs and produces sensible output
 4. Open a PR with a short description of why this codec is worth sharing
+
+## Related
+
+- [`../fleet_studies/`](../fleet_studies/) — investigations into how these codecs behave
+- [`../fleet_testing/`](../fleet_testing/) — shared testing harness
+- [`../tests/`](../tests/) — pytest suite exercising each codec against the harness
