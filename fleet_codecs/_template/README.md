@@ -6,6 +6,10 @@ One-sentence description — what is this codec and why would someone use it.
 
 A few bullets on the regime where this codec shines, and the regime where it doesn't.
 
+## Origin
+
+The story behind why this codec exists. What did you see or notice that made you try this approach? What analogy or metaphor does it lean on? What problem were you staring at when the idea arrived? Three to six sentences, written in your own voice. This section is what turns a reference implementation into something a reader remembers.
+
 ## How to run
 
 ```bash

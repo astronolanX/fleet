@@ -11,6 +11,7 @@ A codec or pattern belongs in Fleet if:
 - It comes with a short README explaining what it is, when to use it, and its caveats
 - It is **safe to publish** — no production tuning, no proprietary datasets, no benchmark numbers against private work
 - It is **tested** against the Fleet testing harness where reasonable
+- It has an **Origin** section that tells the human story behind the idea — what made you try this, what analogy or moment sparked it. A codec without an origin is a codec without a voice.
 
 ## Adding a codec
 

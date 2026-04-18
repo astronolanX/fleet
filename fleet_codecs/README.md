@@ -17,6 +17,9 @@ The shape is the same everywhere so that reading one codec teaches you how to re
 | Codec | Folder | One-liner |
 |---|---|---|
 | TurboQuant | [turboquant/](turboquant/) | Randomized-rotation scalar quantization that preserves inner products |
+| Root | [root/](root/) | Angular quantization against the 240 minimal vectors of E8 |
+| Compass | [compass/](compass/) | Sign-pattern heading + magnitude payload, direction and magnitude as separate code fields |
+| Drift | [drift/](drift/) | Base + tangent-space quantization — pick the nearest prototype, refine locally |
 
 ## Adding a codec
 

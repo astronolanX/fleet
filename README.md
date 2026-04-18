@@ -35,6 +35,9 @@ Small, careful public artifacts help the field more than polished marketing. If 
 fleet/
 ├── fleet_codecs/         # the codec gallery, one folder per codec
 │   ├── turboquant/
+│   ├── root/
+│   ├── compass/
+│   ├── drift/
 │   └── _template/        # copy this when adding a new codec
 ├── fleet_testing/        # reusable testing harness (protocol, generators,
 │                         # assertions, roundtrip eval, pytest fixtures)
@@ -57,6 +60,9 @@ pytest
 | Codec | One-liner |
 |---|---|
 | [TurboQuant](fleet_codecs/turboquant/) | Randomized-rotation scalar quantization that preserves inner products |
+| [Root](fleet_codecs/root/) | Angular quantization against the 240 minimal vectors of E8 |
+| [Compass](fleet_codecs/compass/) | Sign-pattern heading + magnitude payload, direction and magnitude as separate code fields |
+| [Drift](fleet_codecs/drift/) | Base + tangent-space quantization — pick the nearest prototype, refine locally |
 
 ## Adding a codec
 
