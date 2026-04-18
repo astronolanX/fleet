@@ -1,0 +1,23 @@
+[project]
+name = "fleet"
+version = "0.1.0"
+description = "A curated showcase of codecs and protocol patterns from Peripheral Technologies LLC."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Nolan Figueroa" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/astronolanX/fleet"
+Issues = "https://github.com/astronolanX/fleet/issues"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fleet_codecs*", "fleet_testing*"]
