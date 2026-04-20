@@ -45,7 +45,6 @@ fleet/
 ├── testing/           # reusable testing harness (protocol, generators,
 │                      # assertions, roundtrip eval, pytest fixtures)
 ├── tests/             # tests for each codec, written against the harness
-├── CLAUDE.md          # guidance for Claude Code sessions in this repo
 ├── CONTRIBUTING.md    # how to add a codec, study, or propose a change
 └── pyproject.toml
 ```
@@ -76,6 +75,10 @@ Short investigations into how codecs behave — when they work, when they break,
 ## Adding a codec or a study
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## How this repo was built
+
+All code, studies, and docs in Fleet are authored with [Claude Code](https://www.anthropic.com/claude-code) as the primary implementation tool, under human direction and review. Design decisions, verdicts, and what does/doesn't get published are mine.
 
 ## License
 
